@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Michigan Nature Sounds - a wildlife education app featuring Michigan mammals, birds, and insects."
+    />
+    <title>Michigan Nature Sounds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Michigan Wildlife</p>
+          <h1>Michigan Nature Sounds</h1>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          ☀️
+        </button>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="badge">Nature • Education • Audio</p>
+            <h2>Discover the sounds of Michigan’s wild places.</h2>
+            <p>
+              Explore iconic mammals, birds, and insects through vivid descriptions,
+              quick facts, and immersive audio-inspired soundscapes.
+            </p>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="scene circle-one"></div>
+            <div class="scene circle-two"></div>
+            <div class="scene hill"></div>
+            <div class="scene animal-icon">🐾</div>
+          </div>
+        </section>
+
+        <section class="category-bar" aria-label="Categories">
+          <button class="category active" data-category="all">All</button>
+          <button class="category" data-category="mammals">Mammals</button>
+          <button class="category" data-category="birds">Birds</button>
+          <button class="category" data-category="insects">Insects</button>
+        </section>
+
+        <section id="animalGrid" class="animal-grid" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <template id="animalCardTemplate">
+      <article class="animal-card">
+        <div class="card-visual">
+          <span class="emoji"></span>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <div>
+              <p class="category-tag"></p>
+              <h3 class="animal-name"></h3>
+            </div>
+            <button class="play-button" aria-label="Play sound">▶</button>
+          </div>
+          <p class="scientific-name"></p>
+          <p class="description"></p>
+          <div class="facts">
+            <span class="fact habitat"></span>
+            <span class="fact diet"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
