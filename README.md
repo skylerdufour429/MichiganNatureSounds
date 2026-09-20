@@ -1,14 +1,13 @@
 # Michigan Nature Sounds
 
-An educational wildlife sound explorer featuring Michigan mammals,
-birds, and insects.
+A wildlife education app featuring Michigan mammals, birds, and insects.
 
 ## App Information
 
 Name:
 Michigan Nature Sounds
 
-Bundle ID:
+Bundle Identifier:
 com.yourcompany.MichiganNatureSounds
 
 Version:
@@ -17,45 +16,52 @@ Version:
 Platform:
 iOS
 
-Minimum OS:
-iOS 3.0
+Minimum iOS:
+3.0
 
 Category:
 Nature / Wildlife / Educational
 
+IPA:
+Michigan Nature Sounds 1.0.ipa
+
+Size:
+12.6 MB
 
 ## Features
 
-- Browse Michigan wildlife
-- Animal photos
+- Michigan wildlife encyclopedia
+- Animal images
 - Scientific names
-- Play animal sounds
-- Mammals, birds, and insects categories
-- Offline sound library
+- Wildlife descriptions
+- Animal sound playback
+- Mammals, Birds, and Insects categories
 
+## Development
 
-## Web Version
+Built with:
 
-Runs with:
+- HTML
+- CSS
+- JavaScript
+
+Compatible with:
 
 - GitHub Pages
 - GitHub Codespaces
-- Modern browsers
+- iOS Web Wrapper
 
+## Deployment
 
-## Build IPA
+Open:
 
-Output:
+index.html
 
-Michigan Nature Sounds 1.0.ipa
+or enable:
 
+GitHub Pages → Settings → Pages
 
-Structure:
+## iOS Archive
 
 Payload/
- └── MichiganNatureSounds.app/
-
-
-## License
-
-Educational demonstration project.
+└── MichiganNatureSounds.app
